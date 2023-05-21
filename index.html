@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <title>Стили</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="basket">
+        <h3 class="title">Корзина</h3>
+        <div class="goods">
+    <!-----------------------карточка товара 1------------------------->
+            <div class="good">
+                <img class="good__image" src="images/balls.jpg" alt="balls">
+                <div class="good__description">
+                    <h5 class="good__title">Мячики</h5>
+                    <p>Количество: 1</p>
+                    <p>Цвет: Зеленый</p>
+                    <p>Возраст: от 0 лет</p>
+                </div>
+                <div class="good__price">
+                    <p id="a" class="good__price_value">500</p>&nbsp;
+                    <p>руб.</p>
+                </div>
+            </div>
+    <!-----------------------карточка товара 2------------------------->
+            <div class="good">
+                <img class="good__image" src="images/moto.jpg" alt="moto">
+                <div class="good__description">
+                    <h5 class="good__title">Мотоцикл</h5>
+                    <p>Количество: 1</p>
+                    <p>Цвет: Жёлтый</p>
+                    <p>Возраст: от 0 лет</p>
+                </div>
+                <div class="good__price">
+                    <p id="b" class="good__price_value">950</p>&nbsp;
+                    <p>руб.</p>
+                </div>
+            </div>
+    <!-----------------------карточка товара 3------------------------->
+            <div class="good">
+                <img class="good__image" src="images/sorter.jpg" alt="sorter">
+                <div class="good__description">
+                    <h5 class="good__title">Сортер</h5>
+                    <p>Количество: 1</p>
+                    <p>Цвет: Красный</p>
+                    <p>Возраст: от 0 лет</p>
+                </div>
+                <div class="good__price">
+                    <p id="c" class="good__price_value">1200</p>&nbsp;
+                    <p>руб.</p>
+                </div>
+            </div>
+    <!-----------------------карточка товара 4------------------------->
+            <div class="good">
+                <img class="good__image" src="images/train.jpg" alt="train">
+                <div class="good__description">
+                    <h5 class="good__title">Поезд</h5>
+                    <p>Количество: 1</p>
+                    <p>Цвет: Синий</p>
+                    <p>Возраст: от 0 лет</p>
+                </div>
+                <div class="good__price">
+                    <p id="d" class="good__price_value">1350</p>&nbsp;
+                    <p>руб.</p>
+                </div>
+            </div>
+            
+        </div>
+    <!---------------------------Кнопка со скидкой и итого------------------>
+        <div class="bottom">
+            <button class="discount__button" onclick="changePrice()">Использовать купон на 20%</button>
+            <div class="sum">
+                <p>Итого:</p>&nbsp; <p class="total" id="sum">4000</p>
+                <p class="basket__sum"></p>&nbsp;
+                <p>руб.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
