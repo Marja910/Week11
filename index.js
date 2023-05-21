@@ -8,7 +8,11 @@ console.log(sum)
 
 sum.textContent=(a + b + c + d);
 
+let basketSum = document.querySelector('.basket__sum');
+basketSum.textContent = sum;
+
 function changePrice() {
-    let total = sum * 0.8;
+    let totalPriceDiscount = sum * 0.8;
+    basketSum.textContent = totalPriceDiscount;
 }
-sum.textContent=(total);
+sum.textContent=(totalPriceDiscount);
